@@ -13,46 +13,33 @@ export default createMeta({
 })
 
 
-const Template = (args) => (
-  <Tag
+export const Primary = () => (
+  <Tag 
     color="#C71E32"
     border = "1px solid #C71E32"
-    height = "19px"
-    radius = "12px"
     width = "69px"
     textcolor = "#FFFFFF"
-    padding = "2px 10px"
-    fontsize="12px"
-> SENATE </Tag>
+    fontsize="12px" 
+> senate </Tag>
 )
 
-export const Primary = Template.bind({});
-Primary.args = {
-  variant: 'senate',
-};
 
 export const House = () => (
   <Tag
     color="#1A3185"
     border = "1px solid #1A3185"
-    height = "19px"
-    radius = "12px"
     width = "69px"
     textcolor = "#FFFFFF"
-    padding = "2px 10px"
     fontsize="12px"
-> HOUSE </Tag>
+> house </Tag>
 )
 
 export const Joint = () => (
   <Tag
     color="#FFFFFF"
     border = "1px solid #000000"
-    height = "19px"
-    radius = "12px"
-    width = "69px"
+    width = "55px"
     textcolor = "#000000"
-    padding = "2px 10px"
     fontsize="12px"
-> JOINT </Tag>
+> joint</Tag>
 )

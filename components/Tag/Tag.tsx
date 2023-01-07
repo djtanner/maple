@@ -5,11 +5,8 @@ interface Props {
     border: string;
     color: string;
     children?: React.ReactNode;
-    height: string;
-    radius: string
     width: string;
     textcolor: string;
-    padding: string;
     fontsize: string;
   }
   
@@ -17,11 +14,8 @@ interface Props {
       border,
       color,
       children,
-      height,
-      radius,
       width,
       textcolor,
-      padding,
       fontsize
 
     }) => { 
@@ -30,11 +24,8 @@ interface Props {
         style={{
            backgroundColor: color,
            border,
-           borderRadius: radius,
-           height,
            width,
            color: textcolor,
-           padding,
            fontSize: fontsize
         }}
         className={styles.tag}
